@@ -1,0 +1,242 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+.headerPage {
+   /*border: 1px solid red;*/
+   min-width: 100%;
+   min-height: 100px;
+   position: absolute;
+}
+.headerPage .logo_img{
+   float:left;
+   width: 550px; 
+   height: 120px;
+   margin-left: 100px;
+   margin-top: 10px;
+}
+.headerPage span {
+   float:right;
+   padding: 5px 15px;
+   margin-top: 45px;
+   margin-right: 15px;
+   border: 1px solid rgba(255, 0, 0, 0.842);
+   color: rgba(255, 0, 0, 0.842);
+   font-weight: bold;
+   font-size: 15px;
+}
+
+.headerPage .Vi_img {
+   margin-top: 50px;
+   height: 20px;
+   margin-right: 10px;
+   width: 28px;
+   float: right;
+}
+.headerPage .En_img {
+   margin-top: 50px;
+   height: 20px;
+   margin-right: 100px;
+   width: 28px;
+   float: right;
+}
+.headerPage .Search_bar {
+   display: flex;
+   float:right; 
+   margin-top: 46px; 
+   margin-right: 25px;
+}
+.headerPage input {
+   border: red solid;
+   color: blue;
+   width: 150px;
+   height: 30px;
+   border-radius: 20px;
+   font-size: 15px;
+   outline: none;
+}
+
+.headerPage button {
+   background: #fff;
+	border-color: #fff;
+	border-style: solid;
+}
+::placeholder {
+   text-align: center;
+   color: blue;
+}
+.menu_ngang ul{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   margin-top: 110px;
+   padding: 0;
+   list-style-type: none;
+}
+.menu_ngang ul li {
+   display: inline-block;
+}
+
+.menu_ngang ul li a {
+   text-decoration: none;
+   width: 170px;
+   display: block;
+   color: rgb(83, 83, 83);
+   font-size: 20px;
+   margin-bottom: 30px; /*key*/
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+
+
+.menu_ngang ul li a:hover, .menu_ngang ul li a:focus, .menu_ngang ul li a.active {
+   text-decoration: underline;
+   font-size: 20px;
+}
+.menu_ngang ul li ul {
+   background: rgb(0,71,171) ;
+   left: 0;
+   right: 0;
+   margin: 0;
+   margin-top: 0px;
+   padding: 13px;
+   position: absolute;
+   display: none;
+}
+
+.menu_ngang ul li ul li a
+{
+   box-sizing: border-box;
+    color: white;
+    border-right: none;
+    line-height: 30px;
+    width: 100%;
+    margin: 0px 30px; /*key*/
+    padding: 10px;
+}
+
+.menu_ngang ul li:hover  ul{
+   border-bottom: 1px solid #FFF;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   text-decoration: none;
+}
+
+.Lich_Su_Kien {
+   display: flex;
+   flex-direction: row;
+}
+
+.slider_img {
+   margin-top: 50px;
+   width: 1200px;
+   height: 600px;
+   border-radius: 10px;
+   overflow-x: hidden;
+}
+
+.slides_img {
+   width: 500%;
+   height: 600px;
+   display: flex;
+}
+
+.slides_img input {
+   display: none;
+}
+
+.slide {
+   width: 20%;
+   transition: 2s;
+}
+.slide img {
+   width: 1200px;
+   height: 600px;
+}
+.nav_manual {
+   position: absolute;
+   width: 1200px;
+   margin-top: -40px;
+   display: flex;
+   justify-content: center;
+}
+.manual_button {
+   border: 2px solid black;
+   padding: 7px;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: 1s;
+}
+.manual_button:not(:last-child) {
+   margin-right: 30px;
+}
+.manual_button:hover {
+   background-color: #D0D3D4;
+}
+#radio1:checked ~ .first{
+   margin-left: 0;
+}
+#radio2:checked ~ .first{
+   margin-left: -20%;
+}
+#radio3:checked ~ .first{
+   margin-left: -40%;
+}
+#radio4:checked ~ .first{
+   margin-left: -60%;
+}
+#radio5:checked ~ .first {
+   margin-left: -80%;
+}
+.auto_slide_img {
+   position: absolute;
+   width: 1200px;
+   margin-top: 560px;
+   display: flex;
+   justify-content: center;
+}
+.auto_slide_img div {
+   border: 2px solid black;
+   padding: 7px;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: 1s;
+}
+.auto_slide_img div:not(:last-child) {
+   margin-right: 30px;
+}
+#radio1:checked ~ .auto_slide_img .auto_button_1 {
+   background-color: red;
+}
+#radio2:checked ~ .auto_slide_img .auto_button_2 {
+   background-color: red;
+}
+#radio3:checked ~ .auto_slide_img .auto_button_3 {
+   background-color: red;
+}
+#radio4:checked ~ .auto_slide_img .auto_button_4 {
+   background-color: red;
+}
+#radio5:checked ~ .auto_slide_img .auto_button_5 {
+   background-color: red;
+}
+.Noi_Dung_Lich_Su_kien {
+   
+   background-color: bisque;
+   border-radius: 10px;
+}
+.Noi_Dung_Lich_Su_kien h1{
+   color: red;
+   margin-left: 260px;
+}
+.Noi_Dung_Lich_Su_kien div {
+   font-size: x-large;
+   margin-top: 10px;
+   margin-left: 10px;
+   margin-bottom: 5px;
+}
+.news_slider {
+   
+}

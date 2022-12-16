@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+
+    <style>
+        *header{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        li {
+            list-style: none;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 50px;
+            height: 70px;
+            align-items: center;
+        }
+        .logo {
+            flex: 1;
+        }
+        .menu {
+            flex: 3;
+            display: flex;
+        }
+        .menu > li {
+            padding: 0px 12px;
+            position: relative;
+        }
+        .menu > li:hover .sub-menu {
+            visibility: visible;
+            top: 45px;
+        }
+        .sub-menu {
+            position: absolute;
+            width: 150px;
+            border: 1px solid #ccc;
+            padding: 10px 0px 10px 20px;
+            visibility: hidden;
+            top: 50px;
+            transition: 0.2s;
+        }
+        .sub-menu ul {
+            padding-left: 20px;
+        }
+        .sub-menu ul a {
+            font-weight: normal !important;
+            font-size: 12px !important;
+        }
+        .menu li a {
+            font-size: 12px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold !important;
+            line-height: 20px;
+            display: block;
+            padding-right: 50px;
+        }
+        .other {
+            flex: 1;
+            display: flex;
+        }
+        .other > li {
+            padding: 0px 12px;
+        }
+        .other > li:first-child {
+            position: relative;
+        }
+        .other > li:first-child input{
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        .other > li:first-child i {
+            position: absolute;
+        }
+    </style>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://www.creativefabrica.com/wp-content/uploads/2019/02/Online-shop-shopping-shop-logo-by-DEEMKA-STUDIO-3-580x406.jpg" style="height: 70px;">
+        </div>
+        <div class="menu">
+            <li><a href="">Muc 1</a>
+                <ul class="sub-menu">
+                    <li><a href="">...............</a></li>
+                    <li><a href="">...............</a></li>
+                    <li><a href="">...............</a>
+                        <ul>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">...............</a>
+                        <ul>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Muc 2</a>
+                <ul class="sub-menu">
+                    <li><a href="">...............</a></li>
+                    <li><a href="">...............</a></li>
+                    <li><a href="">...............</a>
+                        <ul>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">...............</a>
+                        <ul>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Muc 3</a>
+                <ul class="sub-menu">
+                    <li><a href="">...............</a></li>
+                    <li><a href="">...............</a></li>
+                    <li><a href="">...............</a>
+                        <ul>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">...............</a>
+                        <ul>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Muc 4</a>
+                <ul class="sub-menu">
+                    <li><a href="">...............</a></li>
+                    <li><a href="">...............</a></li>
+                    <li><a href="">...............</a>
+                        <ul>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">...............</a>
+                        <ul>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                            <li><a href="">...............</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Muc 5</a></li>
+            <li><a href="">Muc 6</a></li>
+            <li><a href="">Muc 7</a></li>
+        </div>
+        <div class="other">
+            <li><input type="text" placeholder="Search"> <i class="fa fa-search"></i></li>
+            <li> <a class="fa fa-user" style="margin-right: 5px; margin-left: 20px"></a></li>
+            <li> <a class="fa fa-shopping-bag"></a></li>
+        </div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,48 @@
+// 1 spacer  = 1 rem = 16px
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 6,
+  8: $spacer * 7.5,
+  9: $spacer * 9,
+  10: $spacer * 10.5,
+  11: $spacer * 12,
+  12: $spacer * 13.5,
+  13: $spacer * 15,
+  14: $spacer * 16.5,
+  15: $spacer * 18,
+  16: $spacer * 19.5,
+  17: $spacer * 21,
+  18: $spacer * 22.5,
+  19: $spacer * 24,
+  20: $spacer * 25.5,
+  21: $spacer * 10.5,
+  22: $spacer * 10.5,
+  23: $spacer * 10.5,
+  24: $spacer * 10.5,
+  25: $spacer * 10.5,
+  26: $spacer * 10.5,
+  27: $spacer * 10.5,
+  28: $spacer * 10.5,
+  29: $spacer * 10.5,
+  30: $spacer * 10.5,
+  31: $spacer * 10.5,
+  32: $spacer * 10.5,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
