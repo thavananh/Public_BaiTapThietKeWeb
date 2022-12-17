@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Tạo tài khoản </title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body style="background-image: url(/resources/images/6266270.jpg);">
+    <div class="login">
+        <h1 class="text-center">Tạo tài khoản</h1>
+        <form class="needs-validation">
+            <div class="form-group was-validated">
+                <label class="form-label" for="email">Địa chỉ email</label>
+                <input class="form-control" type="email" id="email" required>
+                <div class="invalid-feedback">
+                Vui lòng nhập email
+                </div>
+            </div>
+            <div class="form-group was-validated">
+                <label class="form-label" for="Password">Mật khẩu</label>
+                <input class="form-control"  type="password" id="password" required>
+                <div class="invalid-feedback">
+                Vui lòng nhập mật khẩu
+                </div>
+            </div>
+            <div class="form-group was-validated">
+                <label class="form-label" for="Password">Nhập lại mật khẩu</label>
+                <input class="form-control"  type="password" id="password" required>
+                <div class="invalid-feedback">
+                Vui lòng Nhập lại mật khẩu
+                </div>
+            </div>
+            
+            <input class="btn btn-success w-100" type="submit" value="Tạo tài khoản">   
+        </form>
+    </div>
+</body>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 
+</html>

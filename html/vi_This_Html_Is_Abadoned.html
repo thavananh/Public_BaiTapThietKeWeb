@@ -1,0 +1,167 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="/css/header_page.css">
+<link rel="stylesheet" href="/css/all.css">
+<link rel="stylesheet" href="/css/all.min.css">
+<style>
+    .test_pop {
+        border-bottom: 1px solid #FFF;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+</style>
+<script type="text/javascript">
+    var counter = 2;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 5){
+        counter = 1;
+      }
+    }, 5000);
+    </script>
+    <!--Auto slide-->
+<body>
+    <div class="headerPage">
+        <a href="/html/vi.html"><img src="/resources/images/106116969_306361297423538_2421300353161578289_n.png" alt="Logo ĐHSP" class="logo_img"></a>
+        <a href="/html/en.html"><img src="/resources/images/2560px-Flag_of_the_United_States.svg.webp" alt="En"class="En_img"></a>
+        <a href="/html/vi.html"><img src="/resources/images/Flag_of_Vietnam.svg.png" alt="Vi"class="Vi_img"></a>
+        <span>Đăng nhập</span>
+        <!--<i class="fa-regular fa-magnifying-glass" style="float:right; margin-top: 50px; margin-right: 25px;"></i>-->
+        <form action=""class="Search_bar">
+            <input type="text" placeholder="Tìm kiếm" name="Finding">
+            <button type="submit"><i class="fa-regular fa-magnifying-glass" style="color:blue"></i></button>
+        </form>
+    </div>
+    <br>
+    <div class="menu_ngang"">
+            <ul>
+                <a href="/html/vi.html" style="text-decoration: none; color: rgb(83, 83, 83);"><i class="fa-sharp fa-solid fa-house" style="font-size: 25px;"></i></a>
+                <li>
+                    <a href="#">Tổng quan</a>
+                    <ul style="border-bottom: 1px solid #FFF; display: flex; flex-direction: row; justify-content: center;">
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Thông điệp</a></li>
+                        <li><a href="#">Tầm nhìn và sứ mệnh</a></li>
+                        <li><a href="#">Các cơ sở của HCMUE</a></li>
+                        <li><a href="#">Cơ sở vật chất</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Sinh viên</a>
+                    <ul>
+                        <li><a href="#">Sinh viên 5 tốt</a></li>
+                        <li><a href="#">Học bổng</a></li>
+                        <li><a href="#">Thành tích </a></li>
+                        <li><a href="#">Sổ tay</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Giảng viên</a>
+                    <ul>
+                        <li><a href="#">Hội đồng chuyên môn</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Chương trình</a>
+                    <ul>
+                        <li><a href="#">Cử nhân</a></li>
+                        <li><a href="#">Thạc sĩ</a></li>
+                        <li><a href="#">Tiến sĩ</a></li>
+                        <li><a href="#">Hoạt động tình nguyện</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Tuyển sinh</a>
+                    <ul>
+                        <li><a href="#">Lý do chọn HCMUE</a></li>
+                        <li><a href="#">Học bổng</a></li>
+                        <li><a href="#">Quy trình tuyển sinh</a></li>
+                        <li><a href="#">Tra cứu tuyển sinh</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Tin tức</a>
+                    <ul>
+                        <li><a href="#">Cử nhân</a></li>
+                        <li><a href="#">Thạc sĩ</a></li>
+                        <li><a href="#">Tiến sĩ</a></li>
+                        <li><a href="#">Bản tin</a></li>
+                        <li><a href="#">Truyền thông</a></li>
+                        <li><a href="#">Archive</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+    </div>
+    <br>
+    <!--image slider start-->
+    <div class="Lich_Su_Kien">
+        <div class="slider_img">
+            <div class="slides_img">
+                <!--Radio buttons start-->
+                <input type="radio" name="radio-button" id="radio1">
+                <input type="radio" name="radio-button" id="radio2">
+                <input type="radio" name="radio-button" id="radio3">
+                <input type="radio" name="radio-button" id="radio4">
+                <input type="radio" name="radio-button" id="radio5">
+                <!--radio buttons end-->
+                <!--slide imgaes start-->
+                <div class="slide first">
+                    <img src="/resources/images/309418554_460909789392616_2184301970836477043_n.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/resources/images/313999104_487069306776664_1819192043196034007_n.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/resources/images/314891738_482558463853439_5309214473397925512_n.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/resources/images/317431101_497862015656417_4115355745773214086_n.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/resources/images/318742584_503717538404198_101012036585672681_n.jpg" alt="">
+                </div>
+                <!--slide images end-->
+                <!--automatic navigation start-->
+                <div class="auto_slide_img">
+                    <div class="auto_button_1"></div>
+                    <div class="auto_button_2"></div>
+                    <div class="auto_button_3"></div>
+                    <div class="auto_button_4"></div>
+                    <div class="auto_button_5"></div>
+                </div>
+                <!--automatic navigation end-->
+            </div>
+                <!--manual navigation start-->
+            <div class="nav_manual">
+                <label for="radio1" class="manual_button"></label>
+                <label for="radio2" class="manual_button"></label>
+                <label for="radio3" class="manual_button"></label>
+                <label for="radio4" class="manual_button"></label>
+                <label for="radio5" class="manual_button"></label>
+            </div>
+                <!--manual navigation start-->
+        </div>
+        <div class="Noi_Dung_Lich_Su_kien">
+            <h1>Sự kiện sắp diễn ra</h1>
+            <div><b>19/11/2022</b>: Thuyết trình đồ án thiết kế web</div>
+            <div><b>03/01/2023</b>: Thi tâm lý học đại cương</div>
+            <div><b>04/01/2023</b>: Thi đường lối quốc phòng và an ninh của Đảng Cộng sản Việt Nam</div>
+            <div><b>05/01/2023</b>: Thi triết học Mác - Lênin</div>
+            <div><b>09/01/2023</b>: Thi toán rời rạc và ứng dụng</div>
+            <div><b>10/01/2023</b>: Thi cơ sở toán trong Công nghệ thông tin</div>
+        </div>
+    </div>
+    <div class="news_slider">
+        <h1>Tin tức sự kiện</h1>
+    </div>
+</body>
+</html>

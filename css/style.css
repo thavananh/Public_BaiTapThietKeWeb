@@ -1,23 +1,23 @@
-body::before {
+body::before { 
   display: block; /*Đây là ghi chú*/
   content: '';
   height: 200px;
 }
 
-.logo_img {
-    width: 550px; 
-    height: 120px;
+ .logo_img {        /*định dạng logo*/
+  width: 550px; 
+  height: 120px;
 }
-.switch_lang_img {
+.switch_lang_img { /*định dạng ảnh language*/
     width: 28px;
     height: 20px;
 }
 
-.header_menu .nav-link{
+.header_menu .nav-link{   /*căn giữa cho ảnh và chữ*/
     text-align: center;
 }
 
-.menu_ngang ul{
+.menu_ngang ul{   /*định dạng thanh menu ngang với ul*/
     display: flex;
     justify-content: center;
     text-align: center;
@@ -25,11 +25,11 @@ body::before {
     padding: 0;
     list-style-type: none;
  }
- .menu_ngang ul li {
+ .menu_ngang ul li { /*định dạng ul và li thanh menu ngang*/
     display: inline-block;
  }
  
- .menu_ngang ul li a {
+ .menu_ngang ul li a {  /*định dạng cho ul và li và a thanh menu ngang*/
     text-decoration: none;
     width: 170px;
     display: block;
@@ -42,11 +42,11 @@ body::before {
  
  
  
- .menu_ngang ul li a:hover, .menu_ngang ul li a:focus, .menu_ngang ul li a.active {
+ .menu_ngang ul li a:hover, .menu_ngang ul li a:focus, .menu_ngang ul li a.active { /*gạch ngang khi người dùng chọn vào phần tử*/
     text-decoration: underline;
     font-size: 20px;
  }
- .menu_ngang ul li ul {
+ .menu_ngang ul li ul { /*định dạng màu nền thanh menu ngang */
     background: rgb(0,71,171) ;
     left: 0;
     right: 0;
@@ -57,8 +57,8 @@ body::before {
     display: none;
  }
  
- .menu_ngang ul li ul li a
- {
+ .menu_ngang ul li ul li a 
+ {                              /*định dạng màu chữ trên thanh menu ngang*/
     box-sizing: border-box;
      color: white;
      border-right: none;
@@ -68,42 +68,42 @@ body::before {
      padding: 10px;
  }
  
- .menu_ngang ul li:hover  ul{
+ .menu_ngang ul li:hover  ul{ /*định dạng khi di chuyển chuột vào thanh menu ngang*/
     border-bottom: 1px solid #FFF;
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-decoration: none;
  }
- .menu_doc {
+ .menu_doc { /*định dạng thanh menu dọc*/
    display: none;
  }
 .menu_ngang .nav-link {
    text-align: center;
 }
-.menu_doc a {
+.menu_doc a { /*định dạng chữ menu dọc*/
    font-size: x-large;
    text-transform: uppercase;
 }
-.menu_doc a:hover, .menu_doc a:focus, .menu_doc a:active {
+.menu_doc a:hover, .menu_doc a:focus, .menu_doc a:active { /*Gạch ngang khi người dùng di chuyển đến phần tử*/
    text-decoration: underline;
 }
-.bang_su_kien_wideScreen img {
+.bang_su_kien_wideScreen img { /*định dạng ảnh của bảng sự kiện với màn hình rộng*/
    width: 1200px;
    height: 600px;
 }
-.bang_su_kien_narrowScreen img {
+.bang_su_kien_narrowScreen img {  /*Định dạng ảnh của bảng sự kiện với màn hình hẹp*/
    width: 1200px;
    height: 600px;
 }
-.bang_su_kien_narrowScreen {
+.bang_su_kien_narrowScreen { /*Định dạng bảng hẹp*/
    display: none;
 }
-.news_slider img {
+.news_slider img { /*Định dạng ảnh trong news*/
    height: 300px;
    width: 70px;
 }
-.news_slider span {
+.news_slider span { /*Định chữ trong ảnh news*/
    font-size: 20px; 
    font-weight:500;
 }
@@ -227,7 +227,7 @@ body::before {
    }
  }
 
- @media screen and (max-width:1200px) {
+ @media screen and (max-width:1200px) { /*Định dạng thông số kích thước màn hình*/
     .menu_ngang {
         display: none;
     }
